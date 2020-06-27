@@ -1,8 +1,8 @@
 package com.lfkekpoint.listadapters
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.widget.Toast
 import com.lfkekpoint.listadapters.presentation.modules.simple.InfoSimpleItem
 import com.lfkekpoint.listadapters.presentation.modules.simple.SettingsListAdapter
@@ -18,7 +18,8 @@ class SettingsActivity : AppCompatActivity() {
 
         val adapter = SettingsListAdapter()
 
-        rView.layoutManager = LinearLayoutManager(this)
+        rView.layoutManager =
+            LinearLayoutManager(this)
         rView.adapter = adapter
 
         adapter.add(InfoSimpleItem("User Name", "Leo Allford"))

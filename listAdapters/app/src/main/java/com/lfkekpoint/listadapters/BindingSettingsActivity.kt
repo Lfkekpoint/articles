@@ -1,8 +1,8 @@
 package com.lfkekpoint.listadapters
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.widget.Toast
 import com.lfkekpoint.listadapters.presentation.base.list.mvvm.VmListAdapter
 import com.lfkekpoint.listadapters.presentation.modules.binding.InfoItem
@@ -18,7 +18,8 @@ class BindingSettingsActivity : AppCompatActivity() {
 
         val adapter = VmListAdapter()
 
-        rView.layoutManager = LinearLayoutManager(this)
+        rView.layoutManager =
+            LinearLayoutManager(this)
         rView.adapter = adapter
 
         adapter.add(InfoItem("User Name", "Leo Allford"))

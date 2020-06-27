@@ -1,6 +1,6 @@
 package com.lfkekpoint.listadapters.presentation.modules.binding
 
-import android.databinding.BindingAdapter
+import androidx.databinding.BindingAdapter
 import android.widget.CompoundButton
 import android.widget.Switch
 import com.lfkekpoint.listadapters.R
