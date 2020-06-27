@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="2"
+    name="Adapters"
+    description="Init base Adapters"
+    minApi="7"
+    minBuildApi="8">
+
+    <category value="LfkekpointInit" />
+
+    <dependency name="android-support-v4" revision="8" />
+
+    <parameter
+        id="initSimpleAdapter"
+        name="Generate SimpleListAdapter"
+        type="boolean"
+        default="true"
+        help="Base omega version" />
+
+    <parameter
+        id="initAdapterVm"
+        name="Generate VmListAdapter"
+        type="boolean"
+        default="true"
+        help="Base alpha version" />
+
+    <thumbs>
+        <thumb>initAdaptersLogo.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
