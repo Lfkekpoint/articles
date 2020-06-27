@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="1"
+    name="Arch"
+    description="Init base architecture"
+    minApi="7"
+    minBuildApi="8">
+
+    <category value="LfkekpointInit" />
+
+    <dependency name="android-support-v4" revision="8" />
+
+    <parameter
+        id="initMvvm"
+        name="Generate mvvm classes"
+        type="boolean"
+        default="true"
+        help="check if want generate" />
+
+    <parameter
+        id="initContainerActivity"
+        name="Generate simple container for fragments"
+        type="boolean"
+        default="true"
+        help="check if want generate" />
+
+    <parameter
+        id="initMapFragment"
+        name="Generate fragment and vm for work with maps"
+        type="boolean"
+        default="true"
+        help="check if want generate" />
+
+    <parameter
+        id="initTabBar"
+        name="Generate BaseTabBarFragment"
+        type="boolean"
+        default="true"
+        help="check if want generate" />
+
+    <thumbs>
+        <thumb>initAdaptersLogo.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

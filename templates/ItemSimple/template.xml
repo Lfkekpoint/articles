@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="Item Simple"
+    description="Creates a blank simple item that is compatible with bases classes"
+    minApi="7"
+    minBuildApi="8">
+
+    <category value="Lfkekpoint" />
+
+    <dependency name="android-support-v4" revision="8" />
+
+    <parameter
+        id="itemName"
+        name="Item Name"
+        type="string"
+        constraints="class|nonempty"
+        default="New"
+        help="creates NewItem" />
+
+    <parameter
+        id="moduleName"
+        name="Module Name"
+        type="string"
+        constraints="nonempty|unique"
+        default="moduleName.list"
+        help="creates folder in modules of presentation layer with NewItem" />
+
+    <thumbs>
+        <thumb>itemSimpleLogo.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
